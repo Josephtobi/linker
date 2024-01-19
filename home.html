@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <aside class="sidebar">
-        <div class="logo">Linker</div>
+        <div class="logo">Ad Trackly</div>
         <nav class="menu">
           <a href="home.html" class="menu-item">
             <img
@@ -46,6 +46,34 @@
         </nav>
       </aside>
       <main class="main-section">
+        <div class="hero-section">
+          <div class="hero-slider">
+            <div class="hero-slide">
+              <img
+                src="https://img.freepik.com/free-photo/photo-delighted-cheerful-afro-american-woman-with-crisp-hair-points-away-shows-blank-space-happy-advertise-item-sale-wears-orange-jumper-demonstrates-where-clothes-shop-situated_273609-26392.jpg?size=626&ext=jpg"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="hero-slide">
+              <img
+                src="https://img.freepik.com/free-photo/happy-adult-pointing-cardboard-speech-bubble-studio-advertise-text-message-colorful-banner-young-man-showing-cartoon-outline-balloon-using-illustration-paper-remote-conversation_482257-41057.jpg?size=626&ext=jpg"
+                alt="Slide 2"
+              />
+            </div>
+            <div class="hero-slide">
+              <img
+                src="https://img.freepik.com/free-photo/horizontal-shot-glad-caucasian-woman-points-aside-with-both-fore-fingers-advertises-something-aside_273609-27148.jpg?size=626&ext=jpg"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="hero-slide">
+              <img
+                src="https://img.freepik.com/free-photo/positive-afro-american-lady-shows-something-amazing-points-up-sideways-with-index-fingers-advertises-copy-space-has-toothy-smile-isolated-yellow-background_273609-34317.jpg?size=626&ext=jpg"
+                alt="Slide 4"
+              />
+            </div>
+          </div>
+        </div>
         <h1>Link Summary</h1>
         <table>
           <thead>
@@ -78,5 +106,10 @@
         </table>
       </main>
     </div>
+    <script>
+      const heroSlider = document.querySelector(".hero-slider");
+      const firstSlide = heroSlider.firstElementChild.cloneNode(true);
+      heroSlider.appendChild(firstSlide);
+    </script>
   </body>
 </html>

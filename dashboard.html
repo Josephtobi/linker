@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <aside class="sidebar">
-        <div class="logo">Linker</div>
+        <div class="logo">Ad Trackly</div>
         <nav class="menu">
           <a href="home.html" class="menu-item">
             <img
@@ -47,6 +47,7 @@
       </aside>
       <main class="main-section">
         <h1 id="dashboard-title">Linker Dashboard</h1>
+        <div id="loadingSpinner" class="loading-spinner"></div>
         <iframe
           width="600"
           height="450"
@@ -58,5 +59,15 @@
         ></iframe>
       </main>
     </div>
+    <script>
+      // Reference to the loading spinner
+      const loadingSpinner = document.getElementById("loadingSpinner");
+      // Reference to the iframe
+      const dashboardIframe = document.getElementById("dashboard-iframe");
+
+      dashboardIframe.addEventListener("load", () => {
+        loadingSpinner.style.display = "none";
+      });
+    </script>
   </body>
 </html>
