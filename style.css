@@ -71,9 +71,20 @@ button {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        width: 100vw;
     }
 
     .image-container {
         order: 2;
+        height: 40vh; /* Adjusted height */
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .content {
+        order: 1;
+        height: 60vh; /* Adjusted height */
+        width: 100%;
+        overflow: hidden;
     }
 }
